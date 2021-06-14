@@ -21,4 +21,4 @@ Route::get('/', 'PageController@index')->name('home');
 /**
  * COMICS
  */
-
+Route::resource('comics', 'ComicsController');
