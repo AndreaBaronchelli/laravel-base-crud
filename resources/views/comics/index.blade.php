@@ -7,7 +7,7 @@
             <tr>
                 <th>Title</th>
                 <th>Type</th>
-                <th>Actions</th>
+                <th colspan="3">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +17,12 @@
                 <td>{{ $comic->type }}</td>
                 <td>
                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-secondary">SHOW</a>
+                </td>
+                <td>
+                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success">EDIT</a>
+                </td>
+                <td>
+                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-danger">DELETE</a>
                 </td>
             </tr> 
             @endforeach
