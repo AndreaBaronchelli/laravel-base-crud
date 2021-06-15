@@ -19,10 +19,10 @@
                     <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-secondary">SHOW</a>
                 </td>
                 <td>
-                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-success">EDIT</a>
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-success">EDIT</a>
                 </td>
                 <td>
-                    <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-danger">DELETE</a>
+                    <a href="{{ route('comics.destroy', $comic->id) }}" class="btn btn-danger">DELETE</a>
                 </td>
             </tr> 
             @endforeach
